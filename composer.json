@@ -29,8 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "GatherContent\\Composer\\": "src-dev/Composer",
-            "GatherContent\\Tests\\": "src-dev/Tests"
+            "GatherContent\\Tests\\": "tests/"
         }
     }
 }
