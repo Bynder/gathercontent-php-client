@@ -162,18 +162,15 @@ class Item extends Base
             if (empty($element)) {
                 continue;
             }
-            $class = NULL;
+            $class = null;
             if (isset($element['id']) && isset($element['label'])) {
                 $class = ElementSimpleChoice::class;
-            }
-            elseif (isset($element['file_id'])) {
+            } elseif (isset($element['file_id'])) {
                 $class = ElementSimpleFile::class;
-            }
-            elseif (!is_array($element)) {
+            } elseif (!is_array($element)) {
                 $class = ElementSimpleText::class;
                 $element = ['value' => $element];
-            }
-            elseif (is_array($element)) {
+            } elseif (is_array($element)) {
                 // This is an asset element that allows several files,
                 // or a mutlichoice element.
                 $elements[$key] = $this->getSubElements($element);
@@ -187,5 +184,4 @@ class Item extends Base
 
         return $elements;
     }
-
 }
