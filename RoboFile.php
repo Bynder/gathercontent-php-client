@@ -143,7 +143,7 @@ class RoboFile extends Tasks
 
         $files = [
             'src/',
-            'src-dev/',
+            'tests/',
             'RoboFile.php',
         ];
 

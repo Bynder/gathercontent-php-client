@@ -12,7 +12,7 @@
   </coverage>
   <testsuites>
     <testsuite name="Unit">
-      <directory>src-dev/Tests/Unit</directory>
+      <directory>tests/Unit</directory>
     </testsuite>
   </testsuites>
   <logging>
