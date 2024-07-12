@@ -186,27 +186,27 @@ class GcBaseTestCase extends TestCase
             switch ($elementType) {
                 case 'text':
                     $field = static::getUniqueResponseElementTemplateText();
-                    $group['fields'][$field['uuid']] = $field;
+                    $group['fields'][] = $field;
                     break;
 
                 case 'files':
                     $field = static::getUniqueResponseElementTemplateFiles();
-                    $group['fields'][$field['uuid']] = $field;
+                    $group['fields'][] = $field;
                     break;
 
                 case 'guideline':
                     $field = static::getUniqueResponseElementTemplateGuideline();
-                    $group['fields'][$field['uuid']] = $field;
+                    $group['fields'][] = $field;
                     break;
 
                 case 'choice_radio':
                     $field = static::getUniqueResponseElementTemplateChoiceRadio();
-                    $group['fields'][$field['uuid']] = $field;
+                    $group['fields'][] = $field;
                     break;
 
                 case 'choice_checkbox':
                     $field = static::getUniqueResponseElementTemplateChoiceCheckbox();
-                    $group['fields'][$field['uuid']] = $field;
+                    $group['fields'][] = $field;
                     break;
             }
         }
