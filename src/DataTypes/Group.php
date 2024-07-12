@@ -55,4 +55,15 @@ class Group extends Base
 
         return $this;
     }
+
+  public function jsonSerialize() {
+    $json = parent::jsonSerialize();
+
+    // To send a structure to the API, fields must be an array, not keyed
+    // by the UUID.
+    $json['fields'] = array_values($json['fields']);
+
+    return $json;
+  }
+
 }
